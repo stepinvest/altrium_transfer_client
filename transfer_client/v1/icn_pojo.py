@@ -111,14 +111,10 @@ class TxnInfo:
 class ICNotification:
     header: Header
     txnInfo: TxnInfo
+    keyId: str = None
 
     @staticmethod
     def from_dict(obj: Any) -> "ICNotification":
         _header = Header.from_dict(obj.get("header"))
         _txnInfo = TxnInfo.from_dict(obj.get("txnInfo"))
         return ICNotification(_header, _txnInfo)
-
-
-# Example Usage
-# jsonstring = json.loads(myjsonstring)
-# root = Root.from_dict(jsonstring)

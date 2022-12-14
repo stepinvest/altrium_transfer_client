@@ -1,0 +1,32 @@
+{
+    "header": {
+        "msgId": "2021012715291620210127",
+        "orgId": "ORGID001",
+        "timeStamp": "2021-01-27T12:59:16.532",
+        "ctry": "SG"
+    },
+    "txnInfo": {
+        "txnType": "INCOMING ACT",
+        "customerReference": "REF00001",
+        "txnRefId": "0811RF0600123",
+        "txnDate": "2021-01-27",
+        "valueDt": "2021-01-27",
+        "receivingParty": {
+            "name": "Bene",
+            "accountNo": "01234567891",
+            "virtualAccountNo": "9ACV12345"
+        },
+        "amtDtls": {
+            "txnCcy": "SGD",
+            "txnAmt": 1.20
+        },
+        "senderParty": {
+            "name": "Sender",
+            "accountNo": "08987877868",
+            "senderBankId": "DBSSSGXX"
+        },
+        "rmtInf": {
+            "paymentDetails": "Testing IADAN"
+        }
+    }
+}
