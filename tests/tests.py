@@ -60,3 +60,5 @@ class MessageTest(unittest.TestCase):
                                 "version": "v1", "checksum": null}'
         message = Message.from_json(json_str)
         self.assertIsNotNone(message)
+        ic_notification = ICNotification.from_dict(message.data)
+        self.assertIsNotNone(ic_notification.header)

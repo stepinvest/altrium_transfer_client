@@ -111,7 +111,6 @@ class TxnInfo:
 class ICNotification:
     header: Header
     txnInfo: TxnInfo
-    keyId: str = None
 
     @staticmethod
     def from_dict(obj: Any) -> "ICNotification":
