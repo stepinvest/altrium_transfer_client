@@ -6,7 +6,7 @@ from datetime import datetime
 from pathlib import Path
 
 from transfer_client.messages import Message
-from transfer_client.v1.icn_pojo import ICNotification
+from transfer_client.v1.icn import ICNotification
 
 
 class ICNPojoTest(unittest.TestCase):
@@ -62,3 +62,4 @@ class MessageTest(unittest.TestCase):
         self.assertIsNotNone(message)
         ic_notification = ICNotification.from_dict(message.data)
         self.assertIsNotNone(ic_notification.header)
+        self.assertEqual(ic_notification.header.msgId, "2021012715291620210127")

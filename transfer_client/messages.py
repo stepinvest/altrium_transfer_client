@@ -1,6 +1,7 @@
 """Root object"""
 import datetime
 from dataclasses import dataclass
+from typing import Optional
 
 from dataclasses_json import dataclass_json
 
@@ -19,9 +20,9 @@ class Message:
 
     created: datetime.datetime
     message_type: str
-    data: any
+    data: dataclass
     version: str = "v1"
-    ip: str = None
-    producer: str = None
-    checksum: str = None
-    key_id: str = None
+    ip: Optional[str] = None
+    producer: Optional[str] = None
+    checksum: Optional[str] = None
+    key_id: Optional[str] = None
